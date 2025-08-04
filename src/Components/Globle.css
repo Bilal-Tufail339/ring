@@ -1,0 +1,147 @@
+.globle-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10%;
+  padding: 40px 5%;
+  background: linear-gradient(to right, #b9b7b501, rgba(209, 137, 88, 0.625));
+  flex-wrap: wrap;
+}
+
+/* Left Side: Text Content */
+.globle-text {
+  flex: 1;
+  min-width: 320px;
+  text-align: left;
+  padding-right: 2rem;
+}
+
+.globle-firsttext {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.globe-leader {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.globle-mission {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Stats Section */
+.globletext-end {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.globle1,
+.globle2,
+.globle3 {
+  width: 150px;
+}
+
+.globlep {
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+
+.globle-word {
+  font-size: 0.7rem;
+  color: #666;
+}
+
+/* Divider */
+hr {
+  width: 100%;
+  margin-top: 2rem;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Logos Section */
+.globle-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.globle-logos img {
+  height: 40px;
+  width: auto;
+}
+
+/* Right Side: Image */
+.globle-img {
+  flex: 1;
+  min-width: 320px;
+  text-align: center;
+}
+
+.globle-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive: Tablet */
+@media (max-width: 768px) {
+  .globle-container {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .globletext-end {
+    justify-content: center;
+  }
+
+  .globle-img {
+    margin-top: 2rem;
+  }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 480px) {
+  .globle-text {
+    text-align: center;
+    padding: 0;
+  }
+
+  .globe-leader {
+    font-size: 1.5rem;
+  }
+
+  .globle-mission {
+    font-size: 0.8rem;
+  }
+
+  .globlep {
+    padding-left: 10px;
+  }
+
+  .globletext-end {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .globle1,
+  .globle2,
+  .globle3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .globle-logos {
+    justify-content: center;
+    gap: 15px;
+  }
+}

@@ -1,0 +1,47 @@
+/* Outer container with overflow hidden */
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+ 
+  padding: 20px 0px;
+}
+
+/* Sliding track for logos */
+.slider-track {
+  display: inline-block;
+  white-space: nowrap;
+  animation: slide-left 10s linear infinite;
+}
+
+/* Each logo */
+.logo {
+  display: inline-block;
+  font-size: 2rem;
+  color: white;
+  margin: 0 30px;
+}
+
+/* Smooth scroll animation */
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive font size and margin */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.5rem;
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.2rem;
+    margin: 0 15px;
+  }
+}

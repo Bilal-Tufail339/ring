@@ -1,0 +1,162 @@
+.business-container{
+    margin-top: 5%;
+}
+@media (max-width: 768px) {
+  .business-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Mobile layout */
+@media (max-width: 480px) {
+  .business-container {
+    flex-direction: column;
+    padding: 10px;
+  }  
+ 
+}
+
+    .business-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* center aligned on desktop and mobile */
+  gap: 20px;
+  padding-top: 2rem;
+}
+
+.business-logos img {
+  height: 60px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+
+
+@media (max-width: 480px) {
+  .business-logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 15px;
+  }
+}
+
+
+.business-logo1{
+    border-bottom: 2px solid black;
+    padding-bottom: 1%;
+   
+
+}
+.health-container{
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 10%;
+}
+@media (max-width:480px) {
+    .health-container{
+        display: flex;
+        flex-direction: column;
+        font-size: 8px;
+    }
+}
+@media (max-width:768px) {
+    .health-container{
+        display: flex;
+        flex-direction: column;
+        font-size: 8px;
+    }
+}
+
+@media (max-width:480px) {
+    pre{
+        display: flex;
+        flex-direction: column;
+        font-size: 8px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media (max-width:768px) {
+    pre{
+        display: flex;
+        flex-direction: column;
+        font-size: 8px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+@media (max-width:480px) {
+    .right-firsttext{
+       text-align: center;
+       padding-left: 5%;
+        font-size: 8px;
+    }
+}
+@media (max-width:768px) {
+    .right-firsttext{
+       text-align: center;
+       padding-left: 5%;
+        font-size: 8px;
+    }
+}
+
+
+.agents-text{
+    display: flex;
+    justify-content: space-around;
+}
+.health-left{
+    position: relative;
+}
+.story-btn{
+    position: absolute;
+    margin-top: -10%;
+    margin-left: 12%;
+    height: 40px;
+    width: 150px;
+}
+.business-text1{
+    padding-top: 55px;
+}
+.business-heading{
+    font-size: 2rem;
+}
+.business-stories{
+    font-weight: 500;
+}
+.business-stories i{
+    background-color: rgb(23, 155, 196);
+    padding: 8px;
+    color: white;
+    border-radius: 50%;
+}
+.health-right{
+    text-align: left;
+    
+}
+.right-firsttext{
+    font-size: 1.8rem;
+    font-weight: 600;
+   
+}
+.agent-strong{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.product-text{
+    font-weight: 600;
+    font-size: 1rem;
+}
+.business-lasttext{
+    font-size: 0.85rem;
+    font-weight: 300;
+}

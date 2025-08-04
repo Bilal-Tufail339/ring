@@ -1,0 +1,24 @@
+.phone-pic{
+      background: linear-gradient(to right, #ff990058, rgb(236, 118, 39));
+      height: 500px;
+display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: flex-end;
+      margin-top: 5%;
+}
+  @media (max-width: 768px) {
+  .phone-pic {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+/* Mobile layout */
+@media (max-width: 480px) {
+  .phone-pic {
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+  }  }

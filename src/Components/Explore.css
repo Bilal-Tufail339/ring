@@ -1,0 +1,182 @@
+.explore-container {
+  max-width: 1060px; /* 3 cards × 300 + 2 gaps */
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  padding: 2rem;
+}
+
+.explore-title {
+    font-size: 2rem;
+  font-weight: bold;
+position: absolute;
+
+  padding: 0.3em 0.6em;
+  border-radius: 5px;
+}
+
+.explore-title span {
+  font-size: 2rem;
+  font-weight: bold;
+ 
+  padding: 0.2em 0.6em;
+
+}
+
+.explore-nav-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1%;
+  margin: 1rem 0;
+    
+  
+}
+
+.explore-nav-buttons button {
+  padding: 0.6rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  background: #eee;
+  border: none;
+  cursor: pointer;
+
+}
+.explore-nav-buttons button:hover {
+  background: #ccc;
+}
+
+.explore-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding-top: 1rem;
+}
+.explore-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.explore-card {
+  position: relative;
+  min-width: 300px;
+  max-width: 300px;
+  height: 380px;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.explore-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.explore-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  color: white;
+  width: 100%;
+  z-index: 2;
+  background: none;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.explore-card-content small {
+  font-weight: bold;
+  font-size: 0.75rem;
+  opacity: 0.9;
+}
+
+.explore-card-content h3 {
+  font-size: 1rem;
+  margin: 0.3em 0;
+  line-height: 1.2;
+}
+
+.explore-card-content a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .explore-container {
+    padding: 1rem;
+  }
+
+  .explore-title {
+    position: relative;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  .explore-title span {
+    font-size: 1.4rem;
+  }
+
+  .explore-nav-buttons {
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0.5rem 0 1rem;
+  }
+
+  .explore-nav-buttons button {
+    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+  }
+
+  .explore-slider {
+    gap: 16px;
+    padding-top: 0.5rem;
+  }
+
+  .explore-card {
+    min-width: 240px;
+    max-width: 240px;
+    height: 320px;
+  }
+
+  .explore-card-content h3 {
+    font-size: 0.95rem;
+  }
+
+  .explore-card-content small {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .explore-card {
+    min-width: 200px;
+    max-width: 200px;
+    height: 280px;
+  }
+
+  .explore-title {
+    font-size: 1.3rem;
+  }
+
+  .explore-title span {
+    font-size: 1.2rem;
+  }
+
+  .explore-card-content h3 {
+    font-size: 0.85rem;
+  }
+
+  .explore-card-content small {
+    font-size: 0.65rem;
+  }
+
+  .explore-nav-buttons button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.7rem;
+  }
+}
+

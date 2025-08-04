@@ -1,0 +1,269 @@
+/* Navbar Styles */
+.navbar {
+
+  display: flex;
+  align-items: center; padding: 1rem 2rem;
+  font-family: "Helvetica", sans-serif;
+justify-content: space-between;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff7a00;
+;
+
+   /* position: fixed;
+  top: 50;
+  left: 0; */
+  /* background-color: #000; */
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.85rem;
+  margin-right: 2%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+
+.navnumber {
+  border-bottom: dotted;
+}
+
+/* Dropdowns */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  font-size: 0.85rem;
+  color: #000;
+  cursor: pointer;
+  font-family: "Helvetica", sans-serif;
+  font-weight: 500;
+}
+
+.dropbtn::after {
+  content: " ▼";
+  font-size: 0.6rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  border-radius: 4px;
+}
+
+.dropdown-content a {
+  color: #000;
+  padding: 10px 14px;
+  display: block;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show dropdown on hover for desktop only */
+@media (min-width: 769px) {
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+
+/* Top Banner */
+.top-banner {
+  background: linear-gradient(to right, #ff990058, rgb(236, 118, 39));
+  color: #000;
+  text-align: center;
+  padding: 8px 1rem;
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.navbtn {
+  padding: 5px 12px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  color: rgb(21, 144, 185);
+  font-weight: 600;
+  font-size: 1rem;
+  white-space: nowrap;
+
+
+}
+
+.navbtn:hover {
+  background-color: #e6e6e6;
+}
+
+.navGartner {
+  font-size: 1.5rem;
+  
+}
+
+.span1 {
+  opacity: 0.30;
+}
+
+.span2 {
+  font-size: 1rem;
+}
+
+/* Icons */
+.fa-globe,
+.fa-magnifying-glass {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Tablet Layout */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .dropdown-content {
+    position: static;
+    display: block;
+    box-shadow: none;
+    border: 1px solid #ddd;
+    margin-top: 0.5rem;
+  }
+
+  .dropbtn::after {
+    display: none;
+  }
+}
+
+/* Mobile Layout */
+@media (max-width: 480px) {
+  .navbar-logo {
+    font-size: 1.3rem;
+  }
+
+  .navbtn {
+    font-size: 0.85rem;
+    padding: 4px 10px;
+  }
+
+  .top-banner {
+    font-size: 13px;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.3rem;
+  }
+
+  .fa-globe,
+  .fa-magnifying-glass {
+    font-size: 1rem;
+  }
+}
+
+/* Custom Fix for Small Screens like iPhone SE */
+@media (max-width: 400px) {
+  /* Adjust navbar layout */
+  .navbar {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 0.8rem 1rem !important;
+    gap: 0.8rem !important;
+  }
+
+  /* Logo shrink */
+  .navbar-logo {
+    font-size: 1.1rem !important;
+    word-break: break-word;
+  }
+
+  /* Adjust nav links stacking */
+  .navbar-links {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.5rem !important;
+    width: 100% !important;
+    font-size: 0.75rem !important;
+  }
+
+  .navbar-links a {
+    font-size: 0.75rem !important;
+  }
+
+  .dropbtn,
+  .dropdown-content a {
+    font-size: 0.75rem !important;
+  }
+
+  .navbtn {
+    font-size: 0.75rem !important;
+    padding: 4px 10px !important;
+    margin-left: 0 !important;
+    align-self: flex-start;
+  }
+
+  .top-banner {
+    font-size: 12px !important;
+    flex-direction: column !important;
+    gap: 0.2rem !important;
+    padding: 6px 1rem !important;
+    text-align: left !important;
+  }
+
+  .navGartner {
+    font-size: 1.2rem !important;
+  }
+
+  .fa-globe,
+  .fa-magnifying-glass {
+    font-size: 1rem !important;
+    margin-left: 4px;
+  }
+
+  /* Prevent dropdown overflow */
+  .dropdown-content {
+    width: 100% !important;
+    box-shadow: none !important;
+    border: 1px solid #ddd !important;
+  }
+
+  .dropdown {
+    width: 100%;
+  }
+}
